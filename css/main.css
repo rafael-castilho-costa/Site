@@ -2,10 +2,7 @@
   margin: 0;
   padding: 0;  
 }
-/*.header{
-
-}*/
-.section-1{
+.section-1 {
     background-color: black;
     padding: 20px 0px;
 }
@@ -32,10 +29,17 @@
 }
 .section-2 {
     background-color: #fff;
+    align-items: center;
     padding: 20px;
+    justify-content: space-between;
+    
+   
+
 }
 .menu {
+    font: 1.10rem 'Prompt', sans-serif;
     
+   
 }
 .menu ul li {
     list-style: none;

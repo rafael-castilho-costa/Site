@@ -29,14 +29,16 @@
 }
 .section-2 {
     background-color: #fff;
-    height: 40px;
     align-items: center;
     padding: 20px;
-    border: ;
+    justify-content: space-between;
+    
+   
 
 }
 .menu {
     font: 1.10rem 'Prompt', sans-serif;
+    
    
 }
 .menu ul li{
@@ -44,6 +46,8 @@
     list-style: none;
     display: inline-block;
     margin-left: 20px;
+    left: 100%;
+   
     
 }
 .menu ul li a {
@@ -51,32 +55,43 @@
     text-decoration: none;
     text-transform: uppercase;
 }
-.container-carrosel {
-
-    background-color: blue;
+.menu ul li a:hover {
+    color: #00bac6;
+    border-bottom: 1px solid #00bac6;
 }
-.section-3 {
-    overflow: hidden;
+.buscador {
+    background-color: #e0eeee;
+    border: solid 2px #5f9ea0;
+    border-radius: 15px;
+    width: 300px;
+    height: 32px;
+    float: right;
+    margin: 0 auto;
 }
-.slider > .section-carrossel {
-    display: flex;
-    flex-wrap: nowrap;
+.txtBusca{
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 18px;
+    border: none;
+    height: 32px;
+    width: 191px;
+}
+.btnBusca {
+    border:none;
+    float:right;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:70px;
+    font-weight:bold;
+    background:#5F9EA0;
+    margin:0 auto;
+    cursor: pointer;
+}
+.divBusca img{
+    float: left;
+    
+}
+.col-100 {
     width: 100%;
-    transition: all 500ms ease;
-}
-.slider > .container-carrosel > .slider-item {
-    flex: 0 0 auto;
-    width: 100%;
-}
-.slider > input:nth-child(1):checked ~ .section-carrossel {
-    transform: translateX(0%);
-}
-.slider > input:nth-child(2):checked ~ .section-carrossel {
-    transform: translateX(-100%);
-}
-.slider > input:nth-child(3):checked ~ .section-carrossel {
-    transform: translateX(-200%);
-}
-.slider > input:nth-child(4):checked ~ .section-carrossel {
-    transform: translateX(-300%);
 }

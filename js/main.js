@@ -1,9 +1,25 @@
-$('.slider-principal').slick({
-    dots: false,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    autoplay: true,
-    prevArrow: '<div class="slick-prev"><i class="fa fa-chevron-left"></i></div>',
-    nextArrow: '<div class="slick-next"><i class="fa fa-chevron-right"></i></div>'
-});
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < dots.length; i++) {slides [i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("active","");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += "active";
+}

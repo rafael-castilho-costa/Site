@@ -118,6 +118,7 @@ html,body{
     width: 100%;
     position:relative;
     margin: auto;
+    
 }
 .mySlides {
     display: none;
@@ -147,7 +148,6 @@ html,body{
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
-    
     bottom: 8px;
     width: 100%;
     text-align: center;

@@ -118,68 +118,6 @@ html,body{
     
 }
 
-.mySlides {
-    /* display: flex; */
-    height: 100px;
-    
-   
-}
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%; 
-    margin-top: -22px; 
-    padding: 16px; 
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;    
-}
-.next{
-    right: 0;
-    border-radius: 3px 0 0 3px ;
-}
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-    margin: auto;
-}
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: center;
-    top: 0;
-    margin: auto;
-}
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-.active, .dot:hover {
-    background-color: #717171;
-}
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
 @keyframes containeer {
     0% {
         background-image: url('../img/goiania1.jpg');
@@ -209,14 +147,82 @@ html,body{
 }
         
 .sub-titulo {
-    text-align: center;
+   
+    align-items: center;
     color: white;
     font: arial;
 }
 .rename{
+   
     text-align: right;
     font-size: 15px;
     color: white;
-    font: arial;
-    padding-top: 150px;
+    padding-top: 90px;
+}
+.conteudo {
+   
+    height: 1214px;
+    
+}
+
+.conteudo-1 {
+    height: 544px;
+    
+}
+.conteudo-2 {
+    height: 670px;
+    background-color: rgba(105, 103, 103, 0.933);
+}
+.patrocinadores{
+    height: 175px;
+    background-color: white;
+}
+
+.header-fim {
+
+    height: 327px;
+    background-color: #4f514b ;
+}
+
+.info {
+    position: relative;
+    height: 88px;
+    background-color:#25281f;
+}
+
+.info-site {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5%;
+
+}
+.repositorio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 12%;
+    padding: 1% 25%;
+}
+
+.info-site ul {
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+.repositorio li {
+    margin-left: 20px;
+}
+
+.info-site li {
+    color: white;
+    list-style-type: none;
+    font: 1.14rem 'Promt', sans-serif;
+}
+.info-site a {
+    color: white;
+}
+.direitos-de-privacidade {
+    padding: 0 20%;
+    
 }

@@ -114,8 +114,7 @@ html,body{
     backface-visibility: hidden;
     animation: containeer 8s linear infinite 0s;
     width: 100%;
-    height: 400px;
-    
+    height: 400px;  
 }
 
 @keyframes containeer {
@@ -223,6 +222,67 @@ html,body{
     color: white;
 }
 .direitos-de-privacidade {
-    padding: 0 20%;
+    padding: 0 25%;
     
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 279px;
+    align-items: center;
+    grid-column-gap: 28px;
+    
+}
+
+.fat1 {
+    text-align: center;
+    /* background-image: url(../img/teste\ de\ backimage.png); */
+    height: 200px;
+    background-color: red;
+   
+}
+.fat2 {
+    text-align: center; 
+    /* background-image: url(../img/teste\ de\ backimage.png); */
+    height: 200px; 
+    background-color: red;
+}
+.fat3 {
+    text-align: center;
+    /* background-image: url(../img/teste\ de\ backimage.png); */
+    height: 200px;
+    background-color: red;
+}
+.fat4 {
+    text-align: center;
+    /* background-image: url(../img/teste\ de\ backimage.png); */
+    height: 200px;
+    background-color: red;
+    
+}
+.fat5 {
+    text-align: center;
+    /* background-image: url(../img/teste\ de\ backimage.png); */
+    height: 200px;
+    background-color: red;}
+
+.fat6 {
+    text-align: center;
+    /* background-image: url(../img/teste\ de\ backimage.png); */
+    height: 200px;
+    background-color: red;
+}
+
+.wrapper-text {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 300px;
+    grid-column-gap: 50px;
+}
+.titulo1 {
+    font: 1.10rem 'Prompt', sans-serif;
+    color: white;
+    margin: 0 auto;
 }
